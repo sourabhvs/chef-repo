@@ -1,0 +1,7 @@
+name 'sshd'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures sshd'
+long_description 'Installs/Configures sshd'
+version '0.1.0'
