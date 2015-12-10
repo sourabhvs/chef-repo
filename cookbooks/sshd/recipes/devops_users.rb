@@ -42,7 +42,8 @@
      owner 'root'
      group 'root'
      variables(
-       :user => "devops"
+       :user => "devops",
+       :deploy => "deploy"
      )
   end
 
