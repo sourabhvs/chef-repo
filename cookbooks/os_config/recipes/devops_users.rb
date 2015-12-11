@@ -18,9 +18,9 @@
      not_if 'getent passwd deploy'
   end
 
-     execute "switch_user" do 
-     command 'su - deploy'
-  end
+#     execute "switch_user" do 
+#     command 'su - deploy'
+#  end
 
 #Create .ssh directory under deploy user 
      directory "#{node['sshd']['authorized_path']}" do 

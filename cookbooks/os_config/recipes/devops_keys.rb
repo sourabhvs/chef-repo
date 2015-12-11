@@ -6,8 +6,8 @@
 
 #include the recipe to add the devops and deploy user and include the sshd recipe
 
-   include_recipe 'sshd::devops_users'
-   include_recipe 'sshd::sshd'
+   include_recipe 'os_config::devops_users'
+   include_recipe 'os_config::sshd'
 
 #Update the authorized_keys 
 

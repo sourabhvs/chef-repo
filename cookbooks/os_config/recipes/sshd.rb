@@ -8,6 +8,13 @@
 
 if node[:platform].include?('ubuntu')
 
+package 'openssh-server'
+package 'openssh-client'
+service 'ssh' do
+action [:enable, :start]
+only_if { 'node.["sshd"]["path_ubuntu"] = "false"' }
+end
+
        template '/etc/ssh/sshd_config' do 
        source 'ubuntu_config.erb'
        variables(
