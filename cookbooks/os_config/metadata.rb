@@ -1,0 +1,7 @@
+name 'os_config'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures os_config'
+long_description 'Installs/Configures os_config'
+version '0.1.0'
