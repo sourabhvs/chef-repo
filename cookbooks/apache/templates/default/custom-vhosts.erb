@@ -1,0 +1,23 @@
+NameVirtualHost *:<%= @port %>
+<VirtualHost *:<%= @port %>>
+ ServerName <%= @server_name %>
+ ServerAdmin sysadmin@qwinixtech.com
+ DocumentRoot <%= @document_root %>
+ LoadModule passenger_module <%= @passenger_mod %>
+   <IfModule mod_passenger.c>
+     PassengerRoot <%= @passenger_root %>
+     PassengerDefaultRuby <%= @passenger_ruby_home %>
+     PassengerMaxPoolSize <%= @passenger_pool_size %>
+     PassengerPoolIdleTime <%= @passenger_pool_id %>
+     PassengerMaxInstancesPerApp <%= @passenger_maxinstance_app %>
+   </IfModule>
+ RackEnv <%= @rails_env %> 
+ <Directory <%= @document_root %>>
+   Options FollowSymLinks
+   AllowOverride all
+   Require all granted 
+ </Directory>
+
+  ErrorLog /u01/logs/httpd/<%= @appname %>-error.log
+  CustomLog /u01/logs/httpd/<%= @appname %>-access.log combined
+</VirtualHost>

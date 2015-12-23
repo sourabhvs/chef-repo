@@ -1,0 +1,13 @@
+{
+  "name" : "Webserver",
+   "default_attributes" :{
+    "apache" : {
+     "orgname" : "Qwinix role",
+     "dep" : "Devops"
+   }
+  },
+ "run_list" : [
+  "recipe[apache]",
+  "recipe[apache::vhosts]"
+ ]
+}
