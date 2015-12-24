@@ -28,12 +28,4 @@ data_bag("vhosts").each do |site|
     recursive true
   end
 
-template "#{document_root}/index.html" do
-    source "index.html.erb"
-    mode "0644"
-    variables(
-      :app_name => app_name,
-      :server_name => site_data["servername"]
-    )
-  end
 end
