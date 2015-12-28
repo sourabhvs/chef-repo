@@ -46,6 +46,7 @@ data_bag("vhosts_ROR").each do |site|
       :server_name => site_data["servername"],
       :document_root => document_root,
       :passenger_mod => site_data["passenger_mod"],
+      :passenger_ruby_root => site_data["passenger_ruby_root"],
       :passenger_ruby_home => site_data["passenger_ruby_home"],
       :passenger_pool_size => site_data["passenger_pool_size"],
       :passenger_pool_id => site_data["passenger_pool_id"],
