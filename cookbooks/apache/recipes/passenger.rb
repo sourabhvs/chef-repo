@@ -1,7 +1,7 @@
 #Data bag for diff passenger version 
 data_bag("passenger").each do |site|
   site_data = data_bag_item("passenger",site)
-  pass_name = site_data["version"]
+  pass_name = site_data["pass_version"]
   template "/etc/httpd/conf.d/#{pass_name}.conf" do
     source "passenger.erb"
     mode "0644"
