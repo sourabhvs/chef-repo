@@ -1,4 +1,5 @@
 {
+ "pass_version" : "passenger_2.0.0.json",
  "passenger_mod" : "/home/deploy/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/passenger-5.0.21/buildout/apache2/mod_passenger.so",
   "passenger_ruby_root" : "/home/deploy/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/passenger-5.0.21",
   "passenger_ruby_home" : "/home/deploy/.rbenv/versions/2.0.0-p353/bin/ruby",
