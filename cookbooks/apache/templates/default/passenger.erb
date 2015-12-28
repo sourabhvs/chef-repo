@@ -1,0 +1,8 @@
+LoadModule passenger_module <%= @passenger_mod %>
+   <IfModule mod_passenger.c>
+     PassengerRoot <%= @passenger_ruby_root %>
+     PassengerDefaultRuby <%= @passenger_ruby_home %>
+     PassengerMaxPoolSize <%= @passenger_pool_size %>
+     PassengerPoolIdleTime <%= @passenger_pool_id %>
+     PassengerMaxInstancesPerApp <%= @passenger_maxinstance_app %>
+   </IfModule>
