@@ -1,0 +1,6 @@
+{
+  "appname" : "it-city-vitality-ang",
+  "servername" : "it.cv-ang.qwinixtech.com",
+  "apppath" : "dist", 
+  "port" : 80
+}

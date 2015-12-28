@@ -1,0 +1,6 @@
+{
+  "appname" : "loanlist-st-ang",
+  "servername" : "st.loanlist.qwinixtech.com",
+  "apppath" : "dist", 
+  "port" : 80
+}
