@@ -1,0 +1,6 @@
+{
+  "appname" : "q-meeting-ang",
+  "servername" : "st.meetings.qwinixtech.com",
+  "apppath" : "dist", 
+  "port" : 80
+}

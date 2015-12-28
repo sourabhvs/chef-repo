@@ -1,0 +1,6 @@
+{
+  "appname" : "q-library-ang",
+  "servername" : "st.library.qwinixtech.com",
+  "apppath" : "dist", 
+  "port" : 80
+}
