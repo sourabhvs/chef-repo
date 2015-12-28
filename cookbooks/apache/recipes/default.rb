@@ -30,9 +30,9 @@ if node[:platform].include?("centos")
 
    #
    service "httpd" do
-     stop_command    "/etc/init.d/httpd stop"
-     start_command   "/etc/init.d/httpd start"
-     restart_command "/etc/init.d/httpd graceful"
+     stop_command    "systemctl stop httpd.service"
+     start_command   "systemctl start httpd.service"
+     restart_command "systemctl restart httpd.service"
      action :enable
   end 
  
