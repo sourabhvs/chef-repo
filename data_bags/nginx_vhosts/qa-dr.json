@@ -1,0 +1,5 @@
+{
+  "appname" : "qa_dradiology",
+  "servername" : "qa-dr.qwinixtech.com",
+  "listen" : 80
+}
