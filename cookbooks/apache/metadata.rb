@@ -1,6 +1,6 @@
 name             'apache'
-maintainer       'YOUR_COMPANY_NAME'
-maintainer_email 'YOUR_EMAIL'
+maintainer       'Qwinix.io'
+maintainer_email 'pmprasad@qwinix.io'
 license          'All rights reserved'
 description      'Installs/Configures apache'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
