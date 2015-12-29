@@ -10,7 +10,7 @@ NameVirtualHost *:<%= @port %>
  PassengerUserSwitching on
  PassengerSpawnMethod smart
  PassengerPoolIdleTime 300
- PassengerMaxRequests 500
+ PassengerMaxRequests 100
  PassengerStatThrottleRate 5
  PassengerMinInstances 2
  PassengerRuby <%= @passenger_ruby %>
