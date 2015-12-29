@@ -21,7 +21,7 @@ data_bag("nginx_vhosts").each do |site|
     )
   end
 
-  directory document_root do
+  directory root_path do
     mode "0755"
     recursive true
   end
