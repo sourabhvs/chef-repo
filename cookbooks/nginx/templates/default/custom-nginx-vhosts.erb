@@ -1,6 +1,6 @@
 upstream <%= @app_name %> {
     # Path to Unicorn SOCK file, as defined previously
-     server unix:<%= @upstream_path %> fail_timeout=0;
+     server unix://<%= @upstream_path %> fail_timeout=0;
 }
 
 server {
