@@ -13,7 +13,7 @@ data_bag("nginx_vhosts").each do |site|
     source "custom-nginx-vhosts.erb"
     mode "0644"
     variables(
-      :appname => app_name,
+      :app_name => site_data["appname"],
       :server_name => site_data["servername"],
       :root_path => root_path,
       :upstream_path => upstream_path,
