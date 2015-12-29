@@ -8,7 +8,6 @@
   },
  "run_list" : [
   "recipe[apache]",
-  "recipe[apache::vhosts]",
-  "recipe[apache::passenger]"
+  "recipe[apache::vhosts]"
  ]
 }
