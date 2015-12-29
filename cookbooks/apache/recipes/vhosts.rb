@@ -45,6 +45,9 @@ data_bag("vhosts_ROR").each do |site|
       :port => site_data["port"],
       :server_name => site_data["servername"],
       :document_root => document_root,
+      :passenger_mod => site_data["passenger_mod"],
+      :passenger_root => site_data["passenger_root"],
+      :passenger_ruby => site_data["passenger_ruby"],
       :rails_env => site_data["rails_env"]
     )
    notifies :restart, "service[httpd]"

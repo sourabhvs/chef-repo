@@ -2,5 +2,8 @@
   "appname" : "inotary_it",
   "servername" : "it.inotary.qwinixtech.com",
   "port" : 80,
+  "passenger_mod" : "/home/deploy/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/passenger-5.0.21/buildout/apache2/mod_passenger.so",
+  "passenger_root" : "/home/deploy/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/passenger-5.0.21",
+  "passenger_ruby" : "/home/deploy/.rbenv/versions/2.0.0-p353/bin/ruby",
   "rails_env" : "it"
 }
